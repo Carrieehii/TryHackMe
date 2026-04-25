@@ -1,0 +1,7 @@
+25/04 - Completed network fundamentals, laying foundations for osi model understanding, packets being sent TCP (connection orientated) great for file transfer where data cant be lost and UDP (less resource) missing packets are allowed like in videos.
+IP address and Mac address ISP and ARPing.
+Web browsing security types http and https as well as vpn and vpn types.
+Switch — connects devices within a network (LAN)
+Router — connects different networks together (your LAN to the internet)
+Stateful firewall — tracks the full connection, knows context
+Stateless firewall — just checks each packet against rules, no memory of previous packets
