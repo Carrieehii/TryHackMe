@@ -33,3 +33,18 @@ Kernel level access means an attacker can bypass almost all security controls
 more in my day to day to keep the habit alive.
 The process of finding out whos account was logged in and which privileges were set was interesting and how you can access all areas of a device with the access of the root directory.
 Looking forward to getting hands on with more terminal useage and rooms as time goes on but next up it data representation.
+
+03/05 - Data Representation — TryHackMe Pre-Security
+Today I focused on data representation and learned how to convert binary numbers into decimal values.
+
+A byte is 8 bits. A byte is also called an octet.
+A bit is a single 0 or 1, representing off/on or low/high voltage.
+Exponents mean a number multiplied by itself a set number of times. So 2³ means 2 × 2 × 2 = 8. Anything to the power of 0 always equals 1.
+Binary is base 2, meaning each column is a power of 2. The 8 column values in a byte are always 128, 64, 32, 16, 8, 4, 2, 1. A 1 means that column is switched on, a 0 means it is off. The maximum value of a byte is 255 (all columns on).
+Hexadecimal provides a more compact way to represent values like colours. RGB colours show how much red, green and blue are present, and hexadecimal can represent those values more efficiently than binary.
+Hexadecimal is base 16. It uses 0-9 for the first ten values and A-F for the next six (A=10, B=11, C=12, D=13, E=14, F=15). This is because we only have 10 digits so letters plug the gap. 
+Instead of a long binary string like 11111111 you can just write FF in hex — much tidier and less room for error. This is why hex appears everywhere in cybersecurity — memory addresses, colour codes, and malware analysis.
+Hex is best thought of as compressed binary — every hex character represents exactly 4 bits. So FF = 11111111 in binary = 255 in decimal, which is the maximum value of a byte.
+Note: "decimal" has two meanings — decimal as a number system means base 10 (everyday numbers 0-9). Decimal as a floating point means a number with a point in it like 3.14. Same word, different contexts.
+The "base" number tells you how many symbols are available before rolling over into a new column. It always starts at 0, so the base number itself never appears as a single digit.
+Base 10 goes 0-9, base 2 goes 0-1, base 16 goes 0-F. When you hit the limit you roll over into the next column — the same way a clock never shows 60 seconds, it rolls over to the next minute instead.
